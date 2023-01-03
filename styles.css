@@ -1,0 +1,51 @@
+*{
+    font-family: 'Segoe UI', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: black;
+    width: 100%;
+}
+
+.logotipo{
+    border-radius: 50%;
+    width: 58px;
+    height: 58px;
+}
+
+.header{
+    margin: 0 auto;
+    height: 67px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.header nav a{
+    color: white;
+    padding-left: 21px;
+    text-transform: uppercase;
+    font-size: 0.813rem;
+    font-weight: bold;
+}
+
+/*Fin del header*/
+
+.section__portada{
+    width: 100%;
+}
+
+.foto__portada{
+    width: 100%;
+    height: 100%;
+}
+
+.titulo{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
