@@ -34,18 +34,231 @@ header {
 
 /*Fin del header*/
 
-.section__portada{
-    width: 100%;
+.section__portada__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .foto__portada{
     width: 100%;
-    height: 100%;
+    height: 90vh;
 }
 
-.titulo{
-    width: 100%;
-    position: relative;
+.section__portada-titulo {
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.9rem;
+    color: white;
+    font-style: italic;
+    text-shadow: 2px 2px black;
+}
+
+.section__portada-span {
+    color: yellow;
+}
+
+/*Comienzo de seccion comunidad*/
+
+.section__comunidad{
+    gap: 2.5rem;
+    background-color: #1e1c18;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+}
+
+.section__comunidad_container{
     display: flex;
     justify-content: center;
+    flex-direction: column;
+}
+
+.section__comunidad__titulo{
+    color: yellow;
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 3rem;
+    text-shadow: 2px 2px black;
+}
+
+.section__comunidad__paragrafo{
+    color: white;
+    font-size: 1rem;
+}
+
+.section__comunidad__imagenes{
+    gap: 1rem;
+    
+}
+
+.foto__comunidad__1, .foto__comunidad__2 {
+    width: 290px;
+    height: 445px;
+}
+
+.foto__comunidad__2{
+    display: none;
+}
+
+/*Comienzo de seccion oferta*/
+
+.section__oferta{
+    background-color: #1e1c18;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    flex-direction: column;
+}
+
+.section__oferta__titulo{
+    color: yellow;
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 2rem;
+    text-shadow: 2px 2px black;
+    text-align: center;
+}
+
+.section__oferta__paragrafo{
+    color: white;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.section__oferta__container__foto{
+    position: relative;
+}
+
+.section__oferta__container__foto img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.section__oferta__container__foto p {
+    position: absolute;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+    z-index: 1;
+    text-transform: uppercase;
+    text-shadow: 2px 2px black;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
+
+/*Comienzo de seccion resultados*/
+
+.section__resultados{
+    background-color: #1e1c18;
+    display: flex;
+    padding: 2rem;
+    flex-direction: column;
+}
+
+.section__resultados__titulo{
+    color: yellow;
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 2rem;
+    text-shadow: 2px 2px black;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.section__resultados__container__foto {
+    width: 100%;
+    background-color: yellow;
+    margin-bottom: 1.2rem;
+}
+
+
+.section__resultados__container__foto img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    
+}
+
+.section__resultados__container__foto div {
+    padding: 4rem;
+}
+
+.section__resultados__container__paragrafo{
+    color: black;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+
+}
+
+.section__resultados__container__foto div span{
+    color: black;
+    font-style: italic;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+/*Comienzo de seccion prueba*/
+
+.section__prueba{
+    background-image: url("/img/Formulario.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 2rem;
+    gap: 5rem;
+}
+
+.section__prueba__titulo{
+    color: yellow;
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 2rem;
+    text-shadow: 2px 2px black;
+    font-weight: 700;
+}
+
+.section__prueba__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2rem;
+    background-color: #1e1c18;
+    padding: 1rem;
+    border-radius: 6px;
+}
+
+.section__prueba__form label {
+    color: #fff;
+    align-self: flex-start;
+    margin-bottom: 4px;
+}
+
+.section__prueba__form input{
+    margin-bottom: 6px;
+}
+
+input[type="submit"] {
+    border-radius: 6px;
+    width: 50%;
+    padding: 0.3rem;
+    background-color: #fff;
+    font-weight: 700;
+    border: none;
+}
+
+input[type="submit"]:hover {
+    background-color: yellow;
 }
