@@ -401,4 +401,20 @@ footer span {
 
 @media screen and (min-width: 1024px) {
 
+    /*Comienzo sección Nuestra comunidad*/
+
+    .section__comunidad {
+   
+    background-color: #fffefd;
+    
+}
+
+.section__comunidad_container {
+    display: flex;
+    
+    margin: 0 2rem;
+}
+
+
+
 }
