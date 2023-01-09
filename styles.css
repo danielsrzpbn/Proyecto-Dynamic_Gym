@@ -214,7 +214,7 @@ header nav a {
 /*Comienzo de seccion prueba*/
 
 .section__prueba {
-    background-image: url("/img/Formulario.jpg");
+    background-image: url("./assets/images/Formulario.jpg");
     background-repeat: no-repeat;
     background-position: right;
     background-size: cover;
