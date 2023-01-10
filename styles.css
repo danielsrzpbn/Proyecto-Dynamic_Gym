@@ -68,6 +68,8 @@ header nav a {
 /*Comienzo de seccion comunidad*/
 
 .section__comunidad {
+    position: relative;
+    height: 100vh;
     gap: 2.5rem;
     background-color: #1e1c18;
     display: flex;
@@ -115,6 +117,7 @@ header nav a {
     align-items: center;
     padding: 2rem;
     flex-direction: column;
+    position: relative;
 }
 
 .section__oferta__titulo {
@@ -186,10 +189,11 @@ header nav a {
     width: 100%;
     height: 400px;
     object-fit: cover;
+    object-position: right;
 }
 
 .section__resultados__container__foto:nth-child(even) img {
-    object-position: 100%;
+    object-position: 45%;
 }
 
 .section__resultados__container__foto div {
@@ -401,20 +405,136 @@ footer span {
 
 @media screen and (min-width: 1024px) {
 
-    /*Comienzo sección Nuestra comunidad*/
+    /*Sección Nuestra comunidad*/
 
     .section__comunidad {
-   
-    background-color: #fffefd;
+        flex-direction: row;
+        
+    }
     
-}
+    .section__comunidad_container {
+        display: flex;
+        justify-content: left;
+        width: 100%;
+        
+        margin-right: 200px;
+    }
 
-.section__comunidad_container {
-    display: flex;
+    .section__comunidad__titulo {
+        text-align: left;
+    }
+
+    .section__comunidad__imagenes{
+        position: relative;
+    }
     
-    margin: 0 2rem;
-}
+    .foto__comunidad__1,
+    .foto__comunidad__2 {
+        position: absolute;
+    }
+
+    .foto__comunidad__1{
+        top: -250px;
+        left: -170px;
+        
+    }
+
+    .foto__comunidad__2{
+        top: -150px;
+        left: 150px;
+        
+    }
+
+    /*Section oferta*/
+
+    .section__oferta__paragrafo{
+        margin-bottom: 2rem;
+    }
+
+    .section__oferta__container__fotos{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .section__oferta__container__foto img{
+        width: 380px;
+    }
+
+    .section__oferta__container__foto p{
+        font-size: 1.5rem;
+    }
+
+    /*Seccion resultados*/
+
+    .section__resultados{
+        padding: 3rem;
+        align-items: center;
+    }
+
+    .section__resultados_container__fotos{
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        
+    }
+
+    .section__resultados__container__foto {
+        margin-left: 0;
+        margin-right: 0;
+        width: 360px;
+        
+    }
+    
+    .section__resultados__container__foto img{
+        width: 100%;
+        object-fit: contain;
+        height: auto;
+    }
+
+    .section__resultados__container__paragrafo, .section__resultados__container__foto div span{
+        font-size: 0.8rem;
+       
+    }
 
 
 
-}
+    .section__resultados__container__foto div{
+        padding: 2rem;
+    }
+
+    /*Seccion Prueba*/
+
+    .section__prueba{
+        height: 80vh;
+    }
+
+    .section__prueba__titulo {
+        width: 50%;
+        text-align: left;
+        margin-right: 2rem;
+    }
+
+    .section__prueba__form {
+        width: 25%
+    }
+
+    .section__prueba__form input{
+        width: 100%;
+    }
+
+    input[type="submit"] {
+        margin-top: 13px;
+        width: 50%;
+    }
+
+    .footer__section {
+        justify-content: space-around;
+    }
+
+
+} 
+
+
+
+
